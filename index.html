@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대전예술의 전당 리뉴얼디자인페이지입니다.</title>
+  <!-- 제이쿼리-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- iink -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- css연결 -->
+  <link rel="stylesheet" href="index.css">
+  <!-- js연결 -->
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="warp">
+    <div class="main">
+      <ul class="main-ul">
+        <li class="main-li"><a href="#">회원제</a></li>
+        <li class="main-li"><a href="login.html" target="_blank">로그인</a></li>
+        <li class="main-li"><a href="#">회원가입</a></li>
+      </ul>
+      <form>
+        <fieldset>
+          <input type="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </fieldset>
+      </form>
+    </div>
+    <header class="top-bar">
+      <div class="h-4 mx-auto border-2 border-black con"></div>
+    </header>
+    <header class="relative top-bar-2">
+      <div class="flex items-end mx-auto con">
+        <div class="flex-grow"></div>
+        <nav class="top-bar-2__menu-box-2">
+          <div class="top-bar-2__menu-box-2-sub-menu-bg"></div>
+          <ul class="flex">
+            <li>
+              <a href="#">공연</a>
+              <ul class="hidden">
+                <li><a href="#">공연안내</a></li>
+                <li><a href="#">예매/취소안내</a></li>
+                <li><a href="#">페스티벌</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">대관</a>
+              <ul class="hidden">
+                <li><a href="#">대관공고</a></li>
+                <li><a href="#">공연장대관</a></li>
+                <li><a href="#">컨벤션홀대관</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">아카데미</a>
+            </li>
+            <a href="#" class="top-bar-2__logo">
+              <img src="img/logo2 1.png" alt="">
+            </a>
+            <li>
+              <a href="#">참여마당</a>
+              <ul class="hidden">
+                <li><a href="#">견학신청</a></li>
+                <li><a href="#">오디션/공모사업 신청</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">설문조사</a></li>
+                <li><a href="#">공연관람평</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+              <ul class="hidden">
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">공지사항</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">기관소개</a>
+              <ul class="hidden">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">조직과 기구</a></li>
+                <li><a href="#">시설안내</a></li>
+                <li><a href="#">후원회</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- 슬라이드 -->
+    <div class="slider-1">
+      <div class="slides">
+        <div class="active" style="background-image:url(https://i.postimg.cc/PqqyvZpv/Group-19.png);"></div>
+        <div style="background-image:url(https://i.postimg.cc/nzj10J1H/Group-17.png);"></div>
+        <div style="background-image:url(https://i.postimg.cc/852mY0yL/Group-16.png);"></div>
+        <div style="background-image:url(https://i.postimg.cc/jjkXH5Pg/Group-18.png);"></div>
+      </div>
+      <div class="page-btns">
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="side-btns">
+        <div>
+          <span><i class="fas fa-angle-left"></i></span>
+        </div>
+        <div>
+          <span><i class="fas fa-angle-right"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- 탭메뉴 -->
+    <section class="flex justify-center section section-1">
+      <div class="flex items-center tab-box-1">
+        <ul class="tab-box-1__head">
+          <li class="tab-box-1__item tab-box-1__item-1 active">
+            <a class="block px-5 py-10 text-center cursor-pointer whitespace-nowrap" onclick="$('.tab-box-1__item').removeClass('active'); $('.tab-box-1__item-1').addClass('active');">
+              <h1 class="text-2xl font-bold">기획공연</h1>
+              <div>Lorem ipsum</div>
+            </a>
+          </li>
+          <li class="tab-box-1__item tab-box-1__item-2">
+            <a class="block px-5 py-10 text-center cursor-pointer whitespace-nowrap" onclick="$('.tab-box-1__item').removeClass('active'); $('.tab-box-1__item-2').addClass('active');">
+              <h1 class="text-2xl font-bold">대관공연</h1>
+              <div> dolor sit amet</div>
+            </a>
+          </li>
+          <li class="tab-box-1__item tab-box-1__item-3">
+            <a class="block px-5 py-10 text-center cursor-pointer whitespace-nowrap" onclick="$('.tab-box-1__item').removeClass('active'); $('.tab-box-1__item-3').addClass('active');">
+              <h1 class="text-2xl font-bold">시립예술단공연</h1>
+              <div>consectetur</div>
+            </a>
+          </li>
+        </ul>
+        <ul class="ml-5 tab-box-1__body">
+          <li class="tab-box-1__item tab-box-1__item-1 active">
+            <div class="swiper-box-1">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><div><img src="img/image 7.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 8.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 9.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 10.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 15.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 16.png" alt=""></div></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tab-box-1__item tab-box-1__item-2">
+            <div class="swiper-box-1">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><div><img src="img/image 18.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 18.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 18.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 18.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 18.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 18.png" alt=""></div></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tab-box-1__item tab-box-1__item-3">
+            <div class="swiper-box-1">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><div><img src="img/image 18.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 19.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 20.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 21.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 22.png" alt=""></div></div>
+                  <div class="swiper-slide"><div><img src="img/image 22.png" alt=""></div></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer1">
+      <div class="width-box">
+        <div class="link-box">
+          <li class="link-box-text"><a href="#">개인정보처림방침</a></li>
+          <li><a href="#">영상정보처리기기 운영 · 관리방침</a></li>
+          <li><a href="#">이메일집단수집거부</a></li>
+          <li><a href="#">뷰어다운로드</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="width-box2">
+        <img src="img/logo3 1.png" alt="" class="footer2-img">
+        <div class="footer2-text">
+          <ul>
+            <li>우)35204 대전광역시 서구 둔산대로 135 대전예술의전당</li>
+            <li>Tel.042-270-8333</li>
+            <li>Fax. 042.270.8149</li>
+            <li>Copyright(c) 2020 DAEJEON ARTS CENTER. All Rights Reserved.</li>
+          </ul>
+        </div>
+        <h1 class="h1">공연예매</h1>
+        <ul class="ul-text">
+          <li class="li1">인터파크</li>
+          <li class="li2">1544.1556</li>
+        </ul>
+        <ul class="ul-text1">
+          <li class="li1">아르스노바</li>
+          <li class="li2">1588.8440</li>
+        </ul>
+        <ul class="ul-text2">
+          <li class="li1">공연안내</li>
+          <li class="li2">042.270.8333</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
