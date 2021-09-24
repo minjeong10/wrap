@@ -1,17 +1,17 @@
 console.clear();
 
 // 마우스 올렷을 때
-$('.slider-1').mouseenter(function() {
+$('.slider-1').mouseenter(function () {
     $(this).attr('data-hover', 'Y');
 });
 
 // 마우스 내렸을 때
-$('.slider-1').mouseleave(function() {
+$('.slider-1').mouseleave(function () {
     $(this).attr('data-hover', 'N');
 });
 
 // 기존 버튼형 슬라이더
-$('.slider-1 > .page-btns > div').click(function(){
+$('.slider-1 > .page-btns > div').click(function () {
     var $this = $(this);
     var index = $this.index();
 
@@ -29,7 +29,7 @@ $('.slider-1 > .page-btns > div').click(function(){
 });
 
 // 좌/우 버튼 추가 슬라이더
-$('.slider-1 > .side-btns > div').click(function(){
+$('.slider-1 > .side-btns > div').click(function () {
     var $this = $(this);
     var $slider = $this.closest('.slider-1');
 
@@ -39,18 +39,16 @@ $('.slider-1 > .side-btns > div').click(function(){
     var $current = $slider.find(' > .page-btns > div.active');
     var $post;
 
-    if ( isLeft ){
+    if (isLeft) {
         $post = $current.prev();
-    }
-    else {
+    } else {
         $post = $current.next();
     };
 
-    if ( $post.length == 0 ){
-        if ( isLeft ){
+    if ($post.length == 0) {
+        if (isLeft) {
             $post = $slider.find(' > .page-btns > div:last-child');
-        }
-        else {
+        } else {
             $post = $slider.find(' > .page-btns > div:first-child');
         }
     };
@@ -58,8 +56,8 @@ $('.slider-1 > .side-btns > div').click(function(){
     $post.click();
 });
 
-setInterval(function(){
-    if ( $('.slider-1').attr('data-hover') != 'Y' ) {
+setInterval(function () {
+    if ($('.slider-1').attr('data-hover') != 'Y') {
         $('.slider-1 > .side-btns > div').eq(1).click();
     }
 }, 3000);
@@ -67,9 +65,12 @@ setInterval(function(){
 /* 탭메뉴*/
 function SwiperBox1__init() {
     const swiper = new Swiper('.swiper-box-1 .swiper', {
-      slidesPerView: 3,
-      spaceBetween: 30,
+        slidesPerView: 3,
+        spaceBetween: 30,
     });
-  }
-  
-  SwiperBox1__init();
+}
+
+SwiperBox1__init();
+
+/* 탭메뉴 */
+
